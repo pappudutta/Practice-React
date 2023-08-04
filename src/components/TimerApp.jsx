@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 const TimerApp = () => {
   const [seconds, setSeconds] = useState(0);
   const [isRunning, setisRunning] = useState(false);
+  const [time, setTime] = useState(0);
 
   useEffect(() => {
     let timer;
@@ -27,11 +28,20 @@ const TimerApp = () => {
     setisRunning(false);
   };
 
+  useEffect(() => {
+    if (seconds > 60) {
+      setTime(prevTime => prevTime + 1);
+      setSeconds(0);
+    }
+  }, [time, seconds]);
+
   return (
     <>
       <div>
         <h3>Timer App</h3>
-        <h1>{seconds}</h1>
+        <h1>
+          {time} : {seconds}
+        </h1>
         <div>
           <button onClick={handleStart}>Start</button>
           <button onClick={handlePause}>Pause</button>
