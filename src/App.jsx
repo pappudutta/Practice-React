@@ -1,5 +1,6 @@
 import "./App.css";
 import Counter from "./components/todo-app/Counter";
+import Todo from "./components/todo-app/todo";
 
 // function initialValue() {
 //   console.log("run run");
@@ -9,7 +10,8 @@ import Counter from "./components/todo-app/Counter";
 function App() {
   return (
     <>
-      <Counter />
+      {/* <Counter /> */}
+      <Todo />
     </>
   );
 }
