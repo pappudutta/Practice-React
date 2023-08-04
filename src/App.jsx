@@ -1,6 +1,5 @@
 import "./App.css";
-import TodoApp from "./components/todoApp";
-import UseEffect from "./hooks/UseEffect";
+import Counter from "./components/todo-app/Counter";
 
 // function initialValue() {
 //   console.log("run run");
@@ -10,8 +9,7 @@ import UseEffect from "./hooks/UseEffect";
 function App() {
   return (
     <>
-      {/* <TodoApp /> */}
-      <UseEffect />
+      <Counter />
     </>
   );
 }
