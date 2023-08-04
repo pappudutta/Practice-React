@@ -15,6 +15,7 @@ const Counter = () => {
   };
   return (
     <>
+      <h3>Counter App</h3>
       <h1>{counter}</h1>
       <button onClick={decearse}>-</button>
       <button onClick={incearse}>+</button>

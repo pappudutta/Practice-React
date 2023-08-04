@@ -1,4 +1,5 @@
 import "./App.css";
+import TimerApp from "./components/TimerApp";
 import Counter from "./components/todo-app/Counter";
 import Todo from "./components/todo-app/todo";
 
@@ -9,10 +10,17 @@ import Todo from "./components/todo-app/todo";
 
 function App() {
   return (
-    <>
-      {/* <Counter /> */}
-      {/* <Todo /> */}t
-    </>
+    <div className="main__div">
+      <div className="box">
+        <Counter />
+      </div>
+      <div className="box">
+        <Todo />
+      </div>
+      <div className="box">
+        <TimerApp />
+      </div>
+    </div>
   );
 }
 

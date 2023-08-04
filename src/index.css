@@ -56,6 +56,50 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.listItems {
+  cursor: pointer;
+  list-style: none;
+}
+.inputItems {
+  display: flex;
+  align-items: center;
+}
+input {
+  padding: 0.8rem 1.2rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.strike {
+  color: red;
+}
+
+.main__div {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.box {
+  border: 1px solid whitesmoke;
+  border-radius: 10px;
+  padding: 30px;
+  max-height: 400px;
+  overflow: scroll;
+}
+.box::-webkit-scrollbar {
+  width: 0;
+}
+.box::-webkit-scrollbar-button {
+  width: 0;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
