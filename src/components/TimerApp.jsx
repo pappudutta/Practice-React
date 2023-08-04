@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 const TimerApp = () => {
   const [seconds, setSeconds] = useState(0);
-  const [isRunning, setisRunning] = useState(false);
+  const [isRunning, setisRunning] = useState(true);
   const [time, setTime] = useState(0);
 
   useEffect(() => {
@@ -25,6 +25,7 @@ const TimerApp = () => {
 
   const handleReset = () => {
     setSeconds(0);
+    setTime(0);
     setisRunning(false);
   };
 
