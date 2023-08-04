@@ -5,7 +5,7 @@ import Todo from "./components/todo-app/todo";
 
 function App() {
   return (
-    <div className="main__div">
+    <div className="main__div container my-2">
       <div className="box">
         <Counter />
       </div>
